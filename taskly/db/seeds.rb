@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+users = User.create([
+{name: "Andrew Wiggin", email:"andrew@gmail.com"},
+{name: "Julian Smith", email: "julian@gmail.com"}
+	])
+
+tasks = Task.create([
+{name: "User 1 Task1", due_date: DateTime.now, user_id: User.first.id},
+{name: "User 1 Task2", due_date: DateTime.now, user_id: User.first.id},
+{name: "User 2 Task1", due_date: DateTime.now, user_id: User.second.id}
+	])
